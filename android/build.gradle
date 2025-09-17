@@ -24,6 +24,7 @@ rootProject.allprojects {
 apply plugin: 'com.android.library'
 
 android {
+    namespace "me.yohom.amap_core_fluttify"
     compileSdkVersion 31
 
     sourceSets {
@@ -31,7 +32,7 @@ android {
         main.jniLibs.srcDir 'libs'
     }
     defaultConfig {
-        minSdkVersion 16
+        minSdkVersion 21
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     lintOptions {
